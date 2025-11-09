@@ -7,7 +7,7 @@ The COBRA project (Change-Based Recording on Blockchain Architecture) aims to pa
 
 To import and use all those libraries we used Apache Maven (https://maven.apache.org/).
 
-_All the paths in the project are written as relative paths_
+_All the paths in the project are specified as relative paths_.
 
 ### Chunk-Division operations
 What if the block to add to the BlockChain is too big? To prevent issues we implemented a chunk based division of the Block data: whenever the (serialized) block exceeds a certain size, we split the block data in some chunks. Each one of them stores a portion of the original data. Then, this data is reassembled and deserialized, if it is needed to be read.
