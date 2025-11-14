@@ -346,7 +346,6 @@ public class BlockChainServiceImpl implements BlockChainService {
                 "../fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore",
                 "../fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/cert.pem");
         try {
-            // /home/marco/Desktop/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/connection-org1.yaml
             return FabricConnector.connect(networkConfigStringPAth);
         } catch (IOException e) {
             throw new RuntimeException("ERROR: fabric network connection error occurred");
